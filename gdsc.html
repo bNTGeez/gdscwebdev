@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Benjamin's Website</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benjamin's Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/bNTGeez">Github</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/benjamin-tang-z35/"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h1>Benjamin Tang</h1>
+    </header>
+    <main>
+      <div>
+        <p>My hobbies are to go to the gym, trade crypto and eat</p>
+        <p>
+          A fun fact about me is that I've been in the crypto space since 2021
+        </p>
+        <img src="images.png" alt="Bitcoin" class="image" />
+        <button class="githubButton" id="githubButton">Visit My GitHub</button>
+      </div>
+      <div></div>
+    </main>
 
-</head>
-<body>
-  <header>
-    <ul>
-      <li><a href='#home'></a></li>
-    </ul>
-    <h1>Benjamin Tang</h1>
-  </header>
-  <main>
-    <div>
-      <p>My hobbies are to go to the gym, trade crypto and eat</p>
-      <p>A fun fact about me is that I've been in the crypto space since 2021</p>
-      <img src="images.png" alt="Bitcoin" class="image">
-      <button onclick="location.href='https://github.com/bNTGeez'">Visit My GitHub</button>
-    </div>
-    <div>
-      
-    </div>
-  </main>
-
-  <script>
-
-  </script>
-</body>
+    <script>
+      document
+        .getElementById("githubButton")
+        .addEventListener("click", function () {
+          window.location.href = "https://github.com/bNTGeez";
+        });
+    </script>
+  </body>
 </html>
